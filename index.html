@@ -20,6 +20,51 @@
 </head>
 
 <body>
+    <div id="container">
+        <h2>Password Generator</h2>
+        <section id="result-container">
+            <!-- This span is where the password will be displayed using innerText in JS -->
+            <span id="result"></span>
+            <button class="btn" id="clipboard">
+                <!-- Font Awesome Icon -->
+                <i class="fa-regular fa-clipboard"></i>
+            </button>
+        </section>
+
+        <!-- Options Section -->
+        <section id="options">
+            <div class="option">
+                <label for="lowercase">Lowercase Letters</label>
+                <input type="checkbox" id="lowercase" checked>
+                
+            </div>
+            <div class="option">
+                <label for="uppercase">Uppercase Letters</label>
+                <input type="checkbox" id="uppercase" checked>
+                
+            </div>
+            <div class="option">
+                <label for="numbers">Numbers</label>
+                <input type="checkbox" id="numbers" checked>
+                
+            </div>
+            <div class="option">
+                <label for="symbols">Symbols</label>
+                <input type="checkbox" id="symbols" checked>
+                
+            </div>
+            <div class="option">
+                <label for="length">Length</label>
+                <!-- Value is the starting/default number. Also, min/max sets the range that the user can select.  -->
+                <input type="number" id="length" value="10" min="4" max="20">
+                
+            </div>
+        </section>
+
+        <button class="btn" id="generate">Generate Password</button>
+    </div>
+
+
 
 
 
