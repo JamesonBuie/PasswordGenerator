@@ -1,0 +1,78 @@
+/* Star Selector selects every element in the HTML file */
+* {
+    /* Includes the padding and border when setting a width or height for an element */
+    box-sizing: border-box;
+}
+body {
+    background-color: #6495ed;
+    color: #eef1ef;
+    font-family: 'Open Sans', sans-serif;
+    /* Flexbox is used here to center the div with an id of container vertically and horizontally.  */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Setting the height to 100vh so the div will be centered vertically in the browser window */
+    height: 100vh;
+    /* Adding padding to the body element so the div container is NOT right up against the edge of the viewport on smaller screen sizes */
+    padding: 25px;
+}
+
+h2 {
+    /* Top right/left bottom */
+    margin: 10px 0 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.btn {
+    background-color: #6495ed ;
+    /* Removes the default button border */
+    border: none;
+    /* Buttons do NOT inherit text color. Must apply a new text color directly to the element */
+    color: #eef1ef;
+    /* Changes the cursor to a pointer when hovering over the button with .btn class */
+    cursor: pointer;
+    padding: 8px 12px;
+}
+
+.option {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+#container {
+    background-color: #639;
+    padding: 15px;
+    width: 350px;
+    border-radius: 5px;
+}
+
+#result-container {
+    background-color: #243119;
+    height: 50px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    padding: 10px 5px 10px 10px;
+    /* Flexbox used to position span and button element */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#clipboard {
+    font-size: 20px;
+}
+
+#generate {
+    font-size: 16px;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+/*  */
+@media (max-width: 400px){
+    #result-container {
+        font-size: 14px;
+    }
+}
